@@ -1,19 +1,10 @@
 class Musica:
-    nome = ''
-    artista = ''
-    duracao = int
 
-musica1 = Musica()
-musica1.nome = 'Bohemian Rhapsody'
-musica1.artista = 'Queen'
-musica1.duracao = 355
+    def __init__(self, nome_musica, artista_musica, duracao_musica):
+        self.nome = nome_musica
+        self.artista = artista_musica
+        self.duracao = duracao_musica
 
-musica2 = Musica()
-musica2.nome = 'Imagine'
-musica2.artista = 'John Lennon'
-musica2.duracao = 183
-
-musica3 = Musica()
-musica3.nome = 'Shape of You'
-musica3.artista = 'Ed Sheeran'
-musica3.duracao = 234
+musica1 = Musica(nome_musica='Under Pressure', artista_musica='Queen & David Bowie', duracao_musica=248)
+musica2 = Musica(nome_musica='The Trooper', artista_musica='Iron Maiden', duracao_musica=245)
+musica3 = Musica(nome_musica='Hotel California', artista_musica='Eagles', duracao_musica=390)
